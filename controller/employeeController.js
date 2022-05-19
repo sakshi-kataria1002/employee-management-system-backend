@@ -1,7 +1,6 @@
 const Joi = require('@hapi/joi')
 const employeeModel = require('../model/employeeModel')
 const bcrypt = require('bcryptjs')
-const jwt = require('jsonwebtoken')
 
 exports.signUp = async (req,res) =>{
     const emailExist = await employeeModel.findOne({email:req.body.email})
