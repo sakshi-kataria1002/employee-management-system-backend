@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 const apiRoute = require("./routes/api_routes")
 
-const PORT = "2000"
+const PORT = "8080"
 
 app.use(express.json(), cors())
 
